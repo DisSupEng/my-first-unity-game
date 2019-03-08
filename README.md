@@ -6,7 +6,7 @@ Goal of the game:
 The goal of this game is to control a box through a series of obstacles. 
 
 Structure of this repo:
-I will be adding a new branch for each tutorial that I complete. Note that I have already started this game before creating this repo so
+Note that I have already started this game before creating this repo so
 not all tutorials will be present.
 
 On completion of the tutorials I may even continue to expand this game on my own.
