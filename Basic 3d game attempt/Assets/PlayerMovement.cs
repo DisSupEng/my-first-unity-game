@@ -18,9 +18,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
-        if(Input.GetKey("a")) {
+
+        if(Input.GetKey(KeyCode.LeftArrow)) {
+            rb.AddForce(-sidewaysForce, 0, 0, ForceMode.VelocityChange);
         }
-        if(Input.GetKey("d")) {
+        if(Input.GetKey(KeyCode.RightArrow)) {
+            rb.AddForce(sidewaysForce, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
