@@ -9,4 +9,10 @@ Structure of this repo:
 Note that I have already started this game before creating this repo so
 not all tutorials will be present.
 
-On completion of the tutorials I may even continue to expand this game on my own.
+On completion of the tutorials I may even continue to expand this game on my own. Some ideas for how I would expand this game are written below.
+
+- Make the game more of a racing game with other AI cars
+- Create custom player vehicles in blender
+- Add a main menu with different levels and options
+
+I want to keep expanding this project because it is important that I show I'm capable of self learning and expanding my own knowledge base.
