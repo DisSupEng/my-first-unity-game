@@ -2,11 +2,15 @@
 
 public class PlayerCollisions : MonoBehaviour
 {
+    public PlayerMovement movementControls;
+
     public void OnCollisionEnter(Collision info)
     {
         if(info.collider.tag == "Obstacle")
         {
-            Debug.Log("We hit an obstacle");
+            // Once the player has hit an object we want to disabled the movement script
+            movementControls.enabled = false;
+
         }
     }
 }
