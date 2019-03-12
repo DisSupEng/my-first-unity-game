@@ -1,9 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private bool gameOver = false;
+    private float RESTART_DELAY = 2;
+
     public void GameOver()
     {
-        Debug.Log("This is a Game Over test!");
+        if(!gameOver) {
+            gameOver = true;
+            Invoke("Restart", RESTART_DELAY);
+        }
+    }
+
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
