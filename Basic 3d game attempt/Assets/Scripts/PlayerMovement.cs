@@ -9,11 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 200f;
     public float sidewaysForce = 100f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -24,6 +19,12 @@ public class PlayerMovement : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.RightArrow)) {
             rb.AddForce(sidewaysForce, 0, 0, ForceMode.VelocityChange);
+        }
+        // transform refers to the player's position. We can reference it like this because this script is linked to the player
+        if (transform.position.y < -1)
+        {
+            // Restart the game
+            FindObjectOfType<GameManager>().GameOver();
         }
     }
 }
