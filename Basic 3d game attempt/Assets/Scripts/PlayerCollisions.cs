@@ -10,7 +10,8 @@ public class PlayerCollisions : MonoBehaviour
         {
             // Once the player has hit an object we want to disabled the movement script
             movementControls.enabled = false;
-
+            // Finds the GameManager and calls the game over method
+            FindObjectOfType<GameManager>().GameOver();
         }
     }
 }
