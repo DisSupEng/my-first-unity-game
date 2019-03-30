@@ -2,10 +2,10 @@
 
 public class EndGame : MonoBehaviour
 {
-    public GameManager gameManager;
-
-    public void OnTriggerEnter()
-    {
-        gameManager.CompleteLevel();
-    }
+   public GameManager gameManager;
+   
+   void OnTriggerEnter(Collider other)
+   {
+       gameManager.CompleteLevel();
+   }
 }
