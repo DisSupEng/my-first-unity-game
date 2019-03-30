@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     private bool gameOver = false;
     private float RESTART_DELAY = 2;
+    public GameObject completeLevelUI;
 
     public void GameOver()
     {
@@ -21,6 +22,6 @@ public class GameManager : MonoBehaviour
 
     public void CompleteLevel()
     {
-        Debug.Log("Level Complete!");
+        completeLevelUI.SetActive(true);
     }
 }
